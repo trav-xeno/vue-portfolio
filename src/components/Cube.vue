@@ -36,7 +36,7 @@
       <div class="scene">
         <div class="cube">
           <div class="cube__face cube__face--front" @click="display('ts')">Typescript</div>
-          <div class="cube__face cube__face--back" @click="display('wasm')">WebAssembly</div>
+          <div class="cube__face cube__face--back" @click="display('wasm')">Wasm</div>
           <div class="cube__face cube__face--right" @click="display('vg')">Video Games</div>
           <div class="cube__face cube__face--left" @click="display('ai')">ML/AI</div>
           <div class="cube__face cube__face--top" @click="display('vr')">Web AR/VR</div>
@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <p>clcik a side to read a project description</p>
+      <p>click a side to read a project description!</p>
     </v-col>
   </v-row>
 </template>
@@ -158,19 +158,19 @@ export default {
   background: hsla(0, 100%, 50%, 0.7);
 }
 .cube__face--right {
-  background: hsla(60, 100%, 50%, 0.7);
+  background: hsla(60, 78%, 46%, 0.7);
 }
 .cube__face--back {
-  background: hsla(120, 100%, 50%, 0.7);
+  background: hsla(120, 52%, 43%, 0.7);
 }
 .cube__face--left {
-  background: hsla(180, 100%, 50%, 0.7);
+  background: hsla(180, 59%, 46%, 0.7);
 }
 .cube__face--top {
   background: hsla(240, 100%, 50%, 0.7);
 }
 .cube__face--bottom {
-  background: hsla(300, 100%, 50%, 0.7);
+  background: hsla(300, 46%, 52%, 0.7);
 }
 
 .cube__face--front {

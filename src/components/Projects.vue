@@ -11,9 +11,9 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn :href="git" color="#1f1f70" text>Git Repo</v-btn>
+      <v-btn :href="git" color="#1f1f70" target="_blank" text>Git Repo</v-btn>
 
-      <v-btn :href="url" color="#1f1f70" text>Live Demo</v-btn>
+      <v-btn :href="url" color="#1f1f70" target="_blank" text>Live Demo</v-btn>
     </v-card-actions>
   </v-card>
 </template>

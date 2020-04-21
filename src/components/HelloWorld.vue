@@ -65,12 +65,12 @@
           <v-row no-gutters>
             <v-img
               :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-              src="../../public/lake.jpg"
+              src="../assets/bg.png"
             >
               <v-theme-provider dark>
                 <v-container fill-height>
-                  <v-row align="center" class="white--text mx-auto" justify="center">
-                    <v-col class="white--text text-center" cols="12" tag="h1">
+                  <v-row align="center" class="mx-auto" justify="start">
+                    <v-col cols="12" sm="12" tag="h1">
                       <span
                         class="font-weight-light t-color"
                         :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
@@ -80,8 +80,16 @@
 
                       <span
                         :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
-                        class="white--text"
+                        class="t-color"
                       >My portfolio!</span>
+                    </v-col>
+                    <v-col cols="12" sm="12">
+                      <v-avatar class="elevation-12 mb-12" size="80">
+                        <v-img src="../assets/GitHub.png"></v-img>
+                      </v-avatar>
+                      <v-avatar class="elevation-12 mb-12" size="80">
+                        <v-img src="../assets/linkedin.png"></v-img>
+                      </v-avatar>
                     </v-col>
 
                     <v-btn class="align-self-end" fab outlined @click="$vuetify.goTo('#about-me')">
@@ -92,6 +100,23 @@
               </v-theme-provider>
             </v-img>
           </v-row>
+          <!-- 
+          <v-parallax
+            :height="$vuetify.breakpoint.smAndDown ? 700 : 800"
+            src="../../public/lake.jpg"
+          >
+            <v-container fill-height>
+              <v-row class="mx-auto">
+                <v-col v-for="[value, title] of stats" :key="title" cols="12" md="3">
+                  <div class="text-center">
+                    <div class="display-3 font-weight-black mb-4" v-text="value"></div>
+
+                    <div class="title font-weight-regular text-uppercase" v-text="title"></div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-parallax>-->
         </section>
 
         <section id="about-me" class="mb-4">
@@ -118,11 +143,6 @@
                 </v-avatar>
 
                 <div></div>
-
-                <!-- 
-                <v-btn color="grey" href="https://vuetifyjs.com" outlined large>
-                  <span class="grey--text text--darken-1 font-weight-bold">Vuetify Documentation</span>
-                </v-btn>-->
               </v-container>
             </v-col>
             <v-col cols="12" sm="12" md="6">
@@ -143,43 +163,6 @@
           </v-row>
           <div class="py-12"></div>
         </section>
-        <!--
-        <section id="features" class="grey lighten-3">
-          <div class="py-12"></div>
-
-          <v-container class="text-center">
-            <h2 class="display-2 font-weight-bold mb-3">VUETIFY FEATURES</h2>
-
-            <v-responsive class="mx-auto mb-12" width="56">
-              <v-divider class="mb-1"></v-divider>
-
-              <v-divider></v-divider>
-            </v-responsive>
-
-            <v-row>
-              <v-col v-for="({ icon, title, text }, i) in features" :key="i" cols="12" md="4">
-                <v-card class="py-12 px-4" color="grey lighten-5" flat>
-                  <v-theme-provider dark>
-                    <div>
-                      <v-avatar color="primary" size="88">
-                        <v-icon large v-text="icon"></v-icon>
-                      </v-avatar>
-                    </div>
-                  </v-theme-provider>
-
-                  <v-card-title
-                    class="justify-center font-weight-black text-uppercase"
-                    v-text="title"
-                  ></v-card-title>
-
-                  <v-card-text class="subtitle-1" v-text="text"></v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-
-          <div class="py-12"></div>
-        </section>-->
 
         <section class="mt-8 grey lighten-3">
           <div class="py-12"></div>
@@ -221,7 +204,7 @@
         <!--
         <section id="stats">
           <v-parallax
-            :height="$vuetify.breakpoint.smAndDown ? 800 : 700"
+            :height="$vuetify.breakpoint.smAndDown ? 700 : 800"
             src="../../public/marching.jpg"
           >
             
