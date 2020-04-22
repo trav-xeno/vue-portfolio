@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" sm="12" md="6">
       <v-container class="text-center">
-        <h4 class="display-2 font-weight-bold mb-3">{{title}}</h4>
+        <h4 class="display-2 font-weight-bold mb-3 t-color">{{title}}</h4>
 
         <v-responsive
           cols="12"
@@ -68,7 +68,7 @@ export default {
         case "wasm":
           this.title = "WebAssembly projects (Wasm)";
           this.desc =
-            "These projects will be wrtien in C++ or rust and will be display the power of Wasm. \n These projects will be coming in future";
+            "These projects will be wrtien in C++ or Rust and will display the power of Wasm. \n These projects will be coming in future";
 
           break;
         case "vr":

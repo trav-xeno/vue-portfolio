@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Travis Portfolio" />
+  <HelloWorld msg="Travis Nevins" />
 </template>
 <style scoped>
 .size {
