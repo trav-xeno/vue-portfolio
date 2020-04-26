@@ -2,13 +2,14 @@
   <v-row>
     <v-col cols="12" sm="12" md="6">
       <v-container class="text-center">
-        <h4 class="display-2 font-weight-bold mb-3 t-color">{{title}}</h4>
+        <h4 class="display-2 font-weight-bold mb-3 t-color">{{ title }}</h4>
 
         <v-responsive
           cols="12"
           class="mx-auto title font-weight-light mb-8"
           max-width="720"
-        >{{desc}}</v-responsive>
+          >{{ desc }}</v-responsive
+        >
         <!-- 
                 <v-avatar class="elevation-12 mb-12" size="128">
                   <v-img src="../../"></v-img>
@@ -35,12 +36,24 @@
     <v-col class="12" sm="12" md="6">
       <div class="scene">
         <div class="cube">
-          <div class="cube__face cube__face--front" @click="display('ts')">Typescript</div>
-          <div class="cube__face cube__face--back" @click="display('wasm')">Wasm</div>
-          <div class="cube__face cube__face--right" @click="display('vg')">Video Games</div>
-          <div class="cube__face cube__face--left" @click="display('ai')">ML/AI</div>
-          <div class="cube__face cube__face--top" @click="display('vr')">Web AR/VR</div>
-          <div class="cube__face cube__face--bottom" @click="display('dc')">Docker AWS</div>
+          <div class="cube__face cube__face--front" @click="display('ts')">
+            Typescript
+          </div>
+          <div class="cube__face cube__face--back" @click="display('wasm')">
+            Wasm
+          </div>
+          <div class="cube__face cube__face--right" @click="display('vg')">
+            Video Games
+          </div>
+          <div class="cube__face cube__face--left" @click="display('ai')">
+            ML/AI
+          </div>
+          <div class="cube__face cube__face--top" @click="display('vr')">
+            Web AR/VR
+          </div>
+          <div class="cube__face cube__face--bottom" @click="display('dc')">
+            Docker AWS
+          </div>
         </div>
       </div>
 
@@ -53,7 +66,7 @@ export default {
   data() {
     return {
       title: "",
-      desc: ""
+      desc: "",
     };
   },
   methods: {
@@ -86,18 +99,18 @@ export default {
         case "ai":
           this.title = "ML/AI projects";
           this.desc =
-            "These projects will be made using python first then displayed online using tensorflowJS. \n They will be coming in future";
+            "These projects will be made using python first then displayed online using tensorflowJS and ML5JS. \n They will be coming in future";
 
           break;
         case "dc":
           this.title = "Docker AWS projects";
           this.desc =
-            "I am planning on deploying projects using AWS ECS for docker continers. Some of the other projects might have be deployed in this system! \n These projects will be coming in future";
+            "I am planning on deploying projects using AWS ECS for docker continers. Some of the other projects might have been deployed in this system already! \n These projects will be coming in future";
 
           break;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

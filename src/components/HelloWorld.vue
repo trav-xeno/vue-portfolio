@@ -15,7 +15,11 @@
               <rect width="100" height="100" />
             </clipPath>
           </defs>
-          <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+          <g
+            id="custom_1"
+            data-name="custom – 1"
+            clip-path="url(#clip-custom_1)"
+          >
             <rect width="100" height="100" fill="#1f1f70" />
             <g
               id="Rectangle_1"
@@ -57,7 +61,9 @@
             src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
         ></v-img>-->
 
-        <v-toolbar-title class="white--text headline" color="white">{{msg}}</v-toolbar-title>
+        <v-toolbar-title class="white--text headline" color="white">{{
+          msg
+        }}</v-toolbar-title>
       </v-app-bar>
 
       <v-content>
@@ -73,23 +79,34 @@
                     <v-col cols="12" sm="12" tag="h1">
                       <span
                         class="font-weight-light t-color"
-                        :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
-                      >WELCOME To</span>
+                        :class="[
+                          $vuetify.breakpoint.smAndDown
+                            ? 'display-1'
+                            : 'display-2',
+                        ]"
+                        >WELCOME To</span
+                      >
 
                       <br />
 
                       <span
-                        :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
+                        :class="[
+                          $vuetify.breakpoint.smAndDown
+                            ? 'display-3'
+                            : 'display-4',
+                        ]"
                         class="s-color"
-                      >My portfolio!</span>
+                        >My Portfolio!</span
+                      >
                     </v-col>
                     <v-col cols="12" class="mt-2" sm="12">
                       <v-btn
-                        class="mx-3"
+                        class="mx-3 "
                         href="https://www.linkedin.com/in/travis-nevins/"
                         target="_blank"
                         color="#ffffff"
                         fab
+                        text
                         width="80"
                         height="80"
                       >
@@ -105,6 +122,7 @@
                         herf="https://github.com/trav-xeno"
                         target="_blank"
                         fab
+                        text
                         color="#ffffff"
                         width="80"
                         height="80"
@@ -144,13 +162,17 @@
             </v-container>
           </v-parallax>-->
         </section>
-
+        <section>
+          <Slide />
+        </section>
         <section id="about-me" class="mb-4">
           <div class="py-12"></div>
           <v-row>
             <v-col cols="12" sm="12" md="6">
               <v-container class="text-center">
-                <h2 class="display-2 t-color font-weight-bold mb-3">ABOUT ME</h2>
+                <h2 class="display-2 t-color font-weight-bold mb-3">
+                  ABOUT ME
+                </h2>
 
                 <v-responsive class="mx-auto mb-8" width="56">
                   <v-divider class="mb-1"></v-divider>
@@ -162,9 +184,18 @@
                   cols="12"
                   class="mx-auto title font-weight-light mb-8"
                   max-width="720"
-                >Some of my hobbies are playing trumpet, hiking, and skating. I am an avid follower of technology and science advancements (yes it's super nerdy but I find thinking of all the possibilities technology fascinating). I am a full-stack developer with a passion for learning and applying new technologies. Designing user interfaces and tweaking designs for user experience are somethings I enjoy doing. I am quick to adapt and solve problems to a variety of situations.</v-responsive>
+                  >Some of my hobbies are playing trumpet, hiking, and skating.
+                  I am an avid follower of technology and science advancements
+                  (yes it's super nerdy but I find thinking of all the
+                  possibilities technology fascinating). I am a full-stack
+                  developer with a passion for learning and applying new
+                  technologies. Designing user interfaces and tweaking designs
+                  for user experience are somethings I enjoy doing. I am quick
+                  to adapt and solve problems to a variety of
+                  situations.</v-responsive
+                >
 
-                <v-avatar class="elevation-12 mb-12" size="128">
+                <v-avatar class="elevation-12 mb-12" size="256">
                   <v-img src="../../public/profile.jpg"></v-img>
                 </v-avatar>
 
@@ -176,7 +207,9 @@
                 <v-col col="12" sm="12">
                   <h2
                     class="text-center display-2 font-weight-bold mb-3 t-color"
-                  >Programming Languages</h2>
+                  >
+                    Programming Languages
+                  </h2>
                   <v-responsive class="mx-auto mb-8" width="56">
                     <v-divider class="mb-1"></v-divider>
 
@@ -185,6 +218,14 @@
                 </v-col>
                 <v-col col="12" sm="12">
                   <Carousel />
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col cols="12" sm="12">
+                  <h3 class="text-center t-color">Web Technologies</h3>
+                </v-col>
+                <v-col cols="12" sm="12">
+                  <Lists />
                 </v-col>
               </v-row>
             </v-col>
@@ -196,7 +237,9 @@
           <div class="py-12"></div>
           <v-row>
             <v-col cols="12" sm="12">
-              <h2 class="text-center display-2 font-weight-bold mb-3">Deployed Proejcts</h2>
+              <h2 class="text-center display-2 font-weight-bold mb-3">
+                Deployed Proejcts
+              </h2>
             </v-col>
           </v-row>
           <v-row>
@@ -224,7 +267,9 @@
         <section class="mt-8">
           <div class="py-12"></div>
 
-          <h2 class="text-center display-2 font-weight-bold mb-3 t-color">Future Projects</h2>
+          <h2 class="text-center display-2 font-weight-bold mb-3 t-color">
+            Future Projects
+          </h2>
 
           <cube />
           <div class="py-12"></div>
@@ -254,7 +299,11 @@
           <div class="py-12"></div>
 
           <v-container>
-            <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Contact Me</h2>
+            <h2
+              class="display-2 font-weight-bold mb-3 text-uppercase text-center"
+            >
+              Contact Me
+            </h2>
 
             <v-responsive class="mx-auto mb-12" width="56">
               <v-divider class="mb-1"></v-divider>
@@ -281,7 +330,13 @@
                 </v-col>
 
                 <v-col class="mx-auto" cols="auto">
-                  <v-btn color="accent" x-large>Submit</v-btn>
+                  <v-btn
+                    @click="greet"
+                    class="white--text"
+                    color="#01579b"
+                    x-large
+                    >Submit</v-btn
+                  >
                 </v-col>
               </v-row>
             </v-theme-provider>
@@ -291,10 +346,12 @@
         </v-sheet>
       </v-content>
 
-      <v-footer class="justify-center" color="#292929" height="100">
+      <v-footer class="justify-center l-bg" height="100">
         <div
           class="title font-weight-light grey--text text--lighten-1 text-center"
-        >&copy; {{ (new Date()).getFullYear() }}, Travis Nevins</div>
+        >
+          &copy; {{ new Date().getFullYear() }}, Travis Nevins
+        </div>
       </v-footer>
     </v-app>
   </div>
@@ -304,14 +361,18 @@
 import Cube from "./Cube.vue";
 import Carousel from "./Carousel.vue";
 import Project from "./Projects.vue";
+import Slide from "./Slide.vue";
+import Lists from "./Lists.vue";
 export default {
   components: {
     Carousel,
     Cube,
-    Project
+    Slide,
+    Lists,
+    Project,
   },
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
@@ -319,19 +380,19 @@ export default {
         {
           src: "../assets/password.png",
           title: "Password Generator",
-          text: "A simple password Generator writen in Vuejs."
+          text: "A simple password Generator writen in Vuejs.",
         },
         {
           src: "../assets/calender.png",
           title: "Simple Day Scheduler App",
-          text: "This project was built with Jquery and momentJs"
+          text: "This project was built with Jquery and momentJs",
         },
         {
           src: " ",
           title: "Open Weather App",
-          text: "This projet was built with VueJS and Open Weather API"
-        }
-      ]
+          text: "This projet was built with VueJS and Open Weather API",
+        },
+      ],
       /*features: [
         {
           icon: "mdi-account-group-outline",
@@ -359,7 +420,14 @@ export default {
         ["5m", "Total Downloads"]
       ] */
     };
-  }
+  },
+  methods: {
+    greet: function() {
+      alert(
+        "Thank you for your interest, but this feature will be added soon! In the mean time connet with me on LinkedIn!"
+      );
+    },
+  },
 };
 </script>
 <style scoped>
@@ -381,5 +449,27 @@ export default {
 }
 .th {
   height: 400px;
+}
+
+.s-btn {
+  color: #ffffff;
+  background-color: #01579b;
+}
+.l-bg {
+  background: linear-gradient(-45deg, #1f1f70, #01599d, #00838f, #00897b);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 </style>
