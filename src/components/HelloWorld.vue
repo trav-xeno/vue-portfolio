@@ -244,7 +244,7 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col cols="12" sx="12" sm="12" md="6">
+              <v-col cols="12" sx="12" sm="12" md="4">
                 <Project
                   src="password.png"
                   title="Password Generator"
@@ -253,7 +253,7 @@
                   url="https://trav-xeno.github.io/Password-Generator/"
                 />
               </v-col>
-              <v-col cols="12" sx="12" sm="12" md="6">
+              <v-col cols="12" sx="12" sm="12" md="4">
                 <Project
                   src="runningApp.png"
                   title="React Data Table"
@@ -262,7 +262,7 @@
                   url="https://trav-xeno.github.io/react-data-table/"
                 />
               </v-col>
-              <v-col cols="12" sx="12" sm="12" md="6">
+              <v-col cols="12" sx="12" sm="12" md="4">
                 <Project
                   src="calender.png"
                   title="Scheduler App"
