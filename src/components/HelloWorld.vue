@@ -74,7 +74,7 @@
               <v-theme-provider dark>
                 <v-container fill-height>
                   <v-row align="center" class="mx-auto" justify="start">
-                    <v-col cols="12" sm="12" tag="h1">
+                    <v-col cols="12" xs="12" sm="12" tag="h1">
                       <span
                         class="font-weight-light t-color"
                         :class="[
@@ -95,7 +95,7 @@
                         class="s-color"
                       >My Portfolio!</span>
                     </v-col>
-                    <v-col cols="12" class="mt-2" sm="12">
+                    <v-col cols="12" class="mt-2" xs="12" sm="12">
                       <v-btn
                         class="mx-3"
                         href="https://www.linkedin.com/in/travis-nevins/"
@@ -162,113 +162,128 @@
           <Slide />
         </section>
         <section id="about-me" class="mb-4">
-          <div class="py-12"></div>
-          <v-row>
-            <v-col cols="12" sm="12" md="6">
-              <v-container class="text-center">
-                <h2 class="display-2 t-color font-weight-bold mb-3">ABOUT ME</h2>
+          <v-container>
+            <div class="py-12"></div>
+            <v-row>
+              <v-col cols="12" xs="12" sm="12" md="6">
+                <v-container class="text-center">
+                  <h2 class="display-2 t-color font-weight-bold mb-3">ABOUT ME</h2>
 
-                <v-responsive class="mx-auto mb-8" width="56">
-                  <v-divider class="mb-1"></v-divider>
-
-                  <v-divider></v-divider>
-                </v-responsive>
-
-                <v-responsive
-                  cols="12"
-                  class="mx-auto title font-weight-light mb-8"
-                  max-width="720"
-                >
-                  Some of my hobbies are playing trumpet, hiking, and skating.
-                  I am an avid follower of technology and science advancements
-                  (yes it's super nerdy but I find thinking of all the
-                  possibilities technology fascinating). I am a full-stack
-                  developer with a passion for learning and applying new
-                  technologies. Designing user interfaces and tweaking designs
-                  for user experience are somethings I enjoy doing. I am quick
-                  to adapt and solve problems to a variety of
-                  situations.
-                </v-responsive>
-
-                <v-avatar class="elevation-12 mb-12" size="256">
-                  <v-img src="../../public/profile.jpg"></v-img>
-                </v-avatar>
-                <v-responsive cols="12">
-                  <p class="mx-auto title font-weight-light">Email: travisnevins@outlook.com</p>
-                  <p class="mx-auto title font-weight-light">Full-stack Developer</p>
-                  <p class="mx-auto title font-weight-light">UI/UX Designer</p>
-                  <p
-                    class="mx-auto title font-weight-light"
-                  >Machine Learning and Artificial Intelligence</p>
-                </v-responsive>
-                <div></div>
-              </v-container>
-            </v-col>
-            <v-col cols="12" sm="12" md="6">
-              <v-row>
-                <v-col col="12" sm="12">
-                  <h2
-                    class="text-center display-2 font-weight-bold mb-3 t-color"
-                  >Programming Languages</h2>
                   <v-responsive class="mx-auto mb-8" width="56">
                     <v-divider class="mb-1"></v-divider>
 
                     <v-divider></v-divider>
                   </v-responsive>
-                </v-col>
-                <v-col col="12" sm="12">
-                  <Carousel />
-                </v-col>
-              </v-row>
-              <v-row>
-                <v-col cols="12" sm="12">
-                  <h3 class="text-center t-color">Web Technologies</h3>
-                </v-col>
-                <v-col cols="12" sm="12">
-                  <Lists />
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-          <div class="py-12"></div>
+
+                  <v-responsive
+                    cols="12"
+                    class="mx-auto title font-weight-light mb-8"
+                    max-width="720"
+                  >
+                    Some of my hobbies are playing trumpet, hiking, and skating.
+                    I am an avid follower of technology and science advancements
+                    (yes it's super nerdy but I find thinking of all the
+                    possibilities technology fascinating). I am a full-stack
+                    developer with a passion for learning and applying new
+                    technologies. Designing user interfaces and tweaking designs
+                    for user experience are somethings I enjoy doing. I am quick
+                    to adapt and solve problems to a variety of
+                    situations.
+                  </v-responsive>
+
+                  <v-avatar class="elevation-12 mb-12" size="256">
+                    <v-img src="../../public/profile.jpg"></v-img>
+                  </v-avatar>
+                  <v-responsive cols="12">
+                    <p class="mx-auto title font-weight-light">Email: travisnevins@outlook.com</p>
+                    <p class="mx-auto title font-weight-light">Full-stack Developer</p>
+                    <p class="mx-auto title font-weight-light">UI/UX Designer</p>
+                    <p
+                      class="mx-auto title font-weight-light"
+                    >Machine Learning and Artificial Intelligence</p>
+                  </v-responsive>
+                  <div></div>
+                </v-container>
+              </v-col>
+              <v-col cols="12" xs="12" sm="12" md="6">
+                <v-row>
+                  <v-col col="12" sx="12" sm="12">
+                    <h2
+                      class="text-center display-2 font-weight-bold mb-3 t-color"
+                    >Programming Languages</h2>
+                    <v-responsive class="mx-auto mb-8" width="56">
+                      <v-divider class="mb-1"></v-divider>
+
+                      <v-divider></v-divider>
+                    </v-responsive>
+                  </v-col>
+                  <v-col col="12" sx="12" sm="12">
+                    <Carousel />
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="12" sx="12" sm="12">
+                    <h3 class="text-center t-color">Web Technologies</h3>
+                  </v-col>
+                  <v-col cols="12" sx="12" sm="12">
+                    <Lists />
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+            <div class="py-12"></div>
+          </v-container>
         </section>
 
         <section class="mt-8 grey lighten-3">
-          <div class="py-12"></div>
-          <v-row>
-            <v-col cols="12" sm="12">
-              <h2 class="text-center display-2 font-weight-bold mb-3">Deployed Proejcts</h2>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12" sm="12" md="6">
-              <Project
-                src="password.png"
-                title="Password Generator"
-                desc="A simple password generator built using VueJS."
-                git="https://github.com/trav-xeno/Password-Generator.git"
-                url="https://trav-xeno.github.io/Password-Generator/"
-              />
-            </v-col>
-            <v-col cols="12" sm="12" md="6">
-              <Project
-                src="calender.png"
-                title="Scheduler App"
-                desc="A day Scheduler built with Jquery and momentJS!"
-                git="https://github.com/trav-xeno/Calendar-App.git"
-                url="https://trav-xeno.github.io/Calendar-App/"
-              />
-            </v-col>
-          </v-row>
-          <div class="py-12"></div>
+          <v-container>
+            <div class="py-12"></div>
+            <v-row>
+              <v-col cols="12" sx="12" sm="12">
+                <h2 class="text-center display-2 font-weight-bold mb-3">Deployed Proejcts</h2>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" sx="12" sm="12" md="6">
+                <Project
+                  src="password.png"
+                  title="Password Generator"
+                  desc="A simple password generator built using VueJS."
+                  git="https://github.com/trav-xeno/Password-Generator.git"
+                  url="https://trav-xeno.github.io/Password-Generator/"
+                />
+              </v-col>
+              <v-col cols="12" sx="12" sm="12" md="6">
+                <Project
+                  src="runningApp.png"
+                  title="React Data Table"
+                  desc="A dynamic data table built in react."
+                  git="https://github.com/trav-xeno/react-data-table.git"
+                  url="https://trav-xeno.github.io/react-data-table/"
+                />
+              </v-col>
+              <v-col cols="12" sx="12" sm="12" md="6">
+                <Project
+                  src="calender.png"
+                  title="Scheduler App"
+                  desc="A day Scheduler built with Jquery and momentJS!"
+                  git="https://github.com/trav-xeno/Calendar-App.git"
+                  url="https://trav-xeno.github.io/Calendar-App/"
+                />
+              </v-col>
+            </v-row>
+            <div class="py-12"></div>
+          </v-container>
         </section>
         <section class="mt-8">
-          <div class="py-12"></div>
+          <v-container>
+            <div class="py-12"></div>
 
-          <h2 class="text-center display-2 font-weight-bold mb-3 t-color">Future Projects</h2>
+            <h2 class="text-center display-2 font-weight-bold mb-3 t-color">Future Projects</h2>
 
-          <cube />
-          <div class="py-12"></div>
+            <cube />
+            <div class="py-12"></div>
+          </v-container>
         </section>
         <!--
         <section id="stats">

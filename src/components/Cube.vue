@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="12" sm="12" md="6">
+    <v-col cols="12" sx="12" sm="12" md="6">
       <v-container class="text-center">
         <h4 class="display-2 font-weight-bold mb-3 t-color">{{ title }}</h4>
 
@@ -8,8 +8,7 @@
           cols="12"
           class="mx-auto title font-weight-light mb-8"
           max-width="720"
-          >{{ desc }}</v-responsive
-        >
+        >{{ desc }}</v-responsive>
         <!-- 
                 <v-avatar class="elevation-12 mb-12" size="128">
                   <v-img src="../../"></v-img>
@@ -33,27 +32,15 @@
         </v-col>
       </v-row>-->
     </v-col>
-    <v-col class="12" sm="12" md="6">
+    <v-col class="12" sx="12" sm="12" md="6">
       <div class="scene">
         <div class="cube">
-          <div class="cube__face cube__face--front" @click="display('ts')">
-            Typescript
-          </div>
-          <div class="cube__face cube__face--back" @click="display('wasm')">
-            Wasm
-          </div>
-          <div class="cube__face cube__face--right" @click="display('vg')">
-            Video Games
-          </div>
-          <div class="cube__face cube__face--left" @click="display('ai')">
-            ML/AI
-          </div>
-          <div class="cube__face cube__face--top" @click="display('vr')">
-            Web AR/VR
-          </div>
-          <div class="cube__face cube__face--bottom" @click="display('dc')">
-            Docker AWS
-          </div>
+          <div class="cube__face cube__face--front" @click="display('ts')">Typescript</div>
+          <div class="cube__face cube__face--back" @click="display('wasm')">Wasm</div>
+          <div class="cube__face cube__face--right" @click="display('vg')">Video Games</div>
+          <div class="cube__face cube__face--left" @click="display('ai')">ML/AI</div>
+          <div class="cube__face cube__face--top" @click="display('vr')">Web AR/VR</div>
+          <div class="cube__face cube__face--bottom" @click="display('dc')">Docker AWS</div>
         </div>
       </div>
 
@@ -66,7 +53,7 @@ export default {
   data() {
     return {
       title: "",
-      desc: "",
+      desc: ""
     };
   },
   methods: {
@@ -109,8 +96,8 @@ export default {
 
           break;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
