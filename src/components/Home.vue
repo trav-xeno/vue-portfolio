@@ -208,6 +208,7 @@
 </template>
 
 <script>
+//Landing page shows projects and schedule  
 import Carousel from "./Carousel" ;
 import List from "./List"; 
 import Slide from "./Slide";

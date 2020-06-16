@@ -95,6 +95,7 @@
   </v-row>
 </template>
 <script>
+ // Added calender to show schedule of fututre proejcts and continous learning
   export default {
     data: () => ({
       focus: '',
