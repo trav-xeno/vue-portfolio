@@ -3,7 +3,6 @@
     <div class="start-pos size">
       <div class="d-inline">
         <h2
-          class="display-2"
           v-anime="{
           translateX: '-150%',
           duration: 10000,
@@ -13,7 +12,6 @@
         }"
         >Musican</h2>
         <h2
-          class="title"
           v-anime="{
           translateX: '-150%',
           duration: 9000,
@@ -24,7 +22,6 @@
       </div>
       <div class="d-inline">
         <h3
-          class="title"
           v-anime="{
           translateX: '-150%',
           duration: 9000,
@@ -36,7 +33,6 @@
       </div>
       <div class="d-inline">
         <h3
-          class="display-2"
           v-anime="{
           translateX: '-150%',
           duration: 9000,
@@ -47,7 +43,6 @@
         >Imaginative</h3>
       </div>
       <h2
-        class="title"
         v-anime="{
           translateX: '-150%',
           duration: 9000,
@@ -57,7 +52,6 @@
         }"
       >Avid Reader</h2>
       <h3
-        class="display-1"
         v-anime="{
           translateX: '-150%',
           duration: 9000,
@@ -65,24 +59,20 @@
           easing: 'easeInOutSine',
           loop: true,
         }"
-      >Fast Leaner</h3> 
-       <h3
-          class="display-2"
-          v-anime="{
+      >Fast Leaner</h3>
+      <h3
+        v-anime="{
           translateX: '-150%',
           duration: 9000,
           delay:2000,
           easing: 'easeInOutSine',
           loop: true,
         }"
-        >Inventing</h3>
+      >Inventive</h3>
     </div>
-     
   </div>
 </template>
-<script>
-export default {};
-</script>
+
 <style scoped>
 .slide {
   height: 250px;
